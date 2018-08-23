@@ -1,3 +1,10 @@
+facter2.4 (2.4.6-1~bpo8+1sci8u1) scibian8; urgency=medium
+
+  * Fork puppet facter for facter2.4
+
+ -- Benoit Boccard <benoit-externe.boccard@edf.fr>  Thu, 23 Aug 2018 15:24:19 +0100
+
+
 facter (2.4.6-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports.
