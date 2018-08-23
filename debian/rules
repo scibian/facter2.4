@@ -8,4 +8,4 @@
 	dh $@
 
 override_dh_auto_install:
-	./install.rb --destdir=debian/facter --quick --sitelibdir=/usr/lib/ruby/vendor_ruby --ruby=/usr/bin/ruby
+	./install.rb --destdir=debian/facter2.4 --quick --sitelibdir=/usr/lib/ruby/vendor_ruby --ruby=/usr/bin/ruby

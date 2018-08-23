@@ -1,23 +1,26 @@
-Source: facter
+Source: facter2.4
 Section: admin
 Priority: optional
-Maintainer: Puppet Package Maintainers <pkg-puppet-devel@lists.alioth.debian.org>
+Maintainer: Scibian Project <packaging@scibian.org>
 Uploaders: Andrew Pollock <apollock@debian.org>, Nigel Kersten <nigel@explanatorygap.net>, Micah Anderson <micah@debian.org>, Stig Sandbeck Mathisen <ssm@debian.org>
 Build-Depends:
  debhelper (>= 8),
  ruby | ruby-interpreter,
 Standards-Version: 3.9.5
-Vcs-Git: git://anonscm.debian.org/pkg-puppet/facter.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-puppet/facter.git
+Vcs-Git: git://github.com/scibian/facter2.4.git
+Vcs-Browser: https://github.com/scibian/facter2.4.git
 Homepage: https://tickets.puppetlabs.com/browse/FACT/
 
-Package: facter
+Package: facter2.4
 Architecture: all
 Depends: ${misc:Depends},
  bind9-host | host,
  net-tools,
  ruby-json,
  ruby | ruby-interpreter,
+Replaces: facter
+Provides: facter
+Conflicts: facter
 Recommends: pciutils, dmidecode, virt-what
 Description: collect and display facts about the system
  A cross-platform Ruby library for retrieving facts from operating systems.
